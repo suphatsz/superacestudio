@@ -1,0 +1,71 @@
+body {
+    background: none;
+    font-family: 'kanit', cursive;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room123_page {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 220px);
+    left: 220px;
+}
+
+.room123_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classBtn {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.classBtn a {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background: #741818;
+    width: 200px;
+    padding: 100px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.classBtn .privateBtn
+{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background: #741818;
+    width: 220px;
+    padding: 100px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

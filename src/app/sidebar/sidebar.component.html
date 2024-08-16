@@ -1,0 +1,44 @@
+    <nav>
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <div class="logo_name">Super Ace</div>
+                </div>
+                <!-- <i class='bx bx-menu' id="btn"></i> -->
+            </div>
+            <ul class="navlist">
+                <li>
+                    <a routerLink="/room123">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="links_name">Room</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/user">
+                    <i class='bx bx-user-circle'></i>
+                    <span class="links_name">User</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/teachers">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">Teachers</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a routerLink="/class">
+                      <i class='bx bx-play'></i>
+                      <span class="links_name">Class</span>
+                    </a>
+                    <div class="submenu">
+                      <a routerLink="/k-pop" class="link">Class K-pop</a>
+                      <a routerLink="/kid" class="link">Class Kids</a>
+                      <a routerLink="/private" class="link">Class Private</a>
+                    </div>
+                  </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <router-outlet></router-outlet>

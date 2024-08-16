@@ -1,0 +1,70 @@
+
+<body class="user_page">
+    <div class="user_content">
+        <h1>Add User Information</h1>
+        <div class="add-user">
+            <form (submit)="onEnter()">
+                <input id="nickname" name="nickname" class="input_nn" type="text" placeholder="ชื่อเล่น" [(ngModel)]="item.nn_List" required>
+                <input id="name" name="name" class="input_fn" type="text" placeholder="ชื่อ" [(ngModel)]="item.n_List" required>
+                <input id="age" name="age" class="input_a" type="number" placeholder="อายุ" [(ngModel)]="item.a_List" required>
+                <input id="tell" name="tell" class="input_t" type="number" placeholder="เบอร์ติดต่อ" [(ngModel)]="item.t_List" required>
+                <div class="form-group">
+                    <select id="room" name="room" [(ngModel)]="item.c_List" required>
+                        <option value="" disabled selected>เลือกคลาส</option>
+                        <option value="K-pop">K-pop</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Private">Private</option>
+                    </select>
+                
+                    <select id="room" name="room" [(ngModel)]="item.tc_List" required>
+                        <option value="" disabled selected>เลือกครู</option>
+                        <option value="T.Jammy">T.Jammy</option>
+                        <option value="T.Babe">T.Babe</option>
+                        <option value="T.Pizza">T.Pizza</option>
+                        <option value="T.Bonuz">T.Bonuz</option>
+                        <option value="T.Dear">T.Dear</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn_add">Add</button>
+              </form>
+        </div>
+    
+
+    <h1>User Information</h1>
+<div class="user_board">
+    
+    <div class="search">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Search...">
+        <a href="#">
+            <i class='bx bx-search-alt-2'></i>
+        </a>
+    </div>
+
+  <div class="board">
+    <table>
+        <thead>
+            <tr class="trtable">
+                <th id="nickname" class="show_nickname">ชื่อเล่น</th>
+                <th id="name" class="show_name">ชื่อ-นามสกุล</th>
+                <th id="age" class="show_age">อายุ</th>
+                <th id="tell" class="show_tell">เบอร์ติดต่อ</th>
+                <th id="class" class="show_class">คลาส</th>
+                <th id="teacher" class="show_teacher">ครู</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="trtbody" *ngFor="let nickname of filteredList(); let i = index">
+                <td id="nickname" class="show_nn">{{ nickname }}</td>
+                <td id="name" class="show_n">{{ n_List[i] }}</td>
+                <td id="age" class="show_a">{{ a_List[i] }}</td>
+                <td id="tell" class="show_t">{{ t_List[i] }}</td>
+                <td id="class" class="show_c">{{ c_List[i] }}</td>
+                <td id="teacher" class="show_tc">{{ tc_List[i] }}</td>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+</body>
+
+<router-outlet></router-outlet>

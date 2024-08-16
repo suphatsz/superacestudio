@@ -1,0 +1,65 @@
+<div class="summary_page">
+    <body>
+        <div class="container">
+            <h2>อนุมัติการเช่าห้อง</h2>
+            <form>
+                <div class="form-group">
+                    <label for="room">ห้อง</label>
+                    <select id="room" name="room">
+                        <option value="" disabled selected>เลือกห้อง</option>
+                        <option value="room1">ห้องที่ 1</option>
+                        <option value="room2">ห้องที่ 2</option>
+                        <option value="room3">ห้องที่ 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">ชื่อผู้เช่า</label>
+                    <input type="text" id="name" name="name" placeholder="ชื่อผู้เช่า">
+                </div>
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์</label>
+                    <input type="text" id="phone" name="phone" placeholder="เบอร์โทรศัพท์">
+                </div>
+                <div class="form-group">
+                    <label for="price">ค่าเช่า</label>
+                    <input type="text" id="price" name="price" placeholder="กำหนดค่าเช่า">
+                </div>
+                <div class="form-group">
+                    <label for="time">เวลาเข้า-ออก</label>
+                    <input type="text" id="time" name="time" placeholder="10:00-11:00">
+                </div>
+
+                <div class="form-group">
+                    <label for="employee">ชื่อพนักงาน</label>
+                    <select id="employee" name="employee">
+                        <option value="" disabled selected>เลือกพนักงาน</option>
+                        <option value="name">โบนัส</option>
+                        <option value="name">เบียร์</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">การชำระเงิน</label>
+                    <select id="payment" name="payment" [(ngModel)]="selectedPayment" required>
+                        <option value="" disabled>เลือกวิธีการชำระเงิน</option>
+                        <option value="cash">เงินสด</option>
+                        <option value="bank">ธนาคาร</option>
+                    </select>
+                    <div class="upload-box" *ngIf="selectedPayment === 'bank'">
+                        <input type="file" id="upload" name="upload" (change)="onFileChange($event)" style="display: none;">
+                        <label for="upload" class="upload-label">อัพโหลดสลิปการโอน</label>
+                        <img *ngIf="imageSrc" [src]="imageSrc" alt="Selected Image" class="preview-image">
+                    </div>
+                </div>       
+
+                <div class="form-group full-width">
+                    <button type="submit">ยืนยันการจอง</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</div>
+
+
+
+<router-outlet></router-outlet>

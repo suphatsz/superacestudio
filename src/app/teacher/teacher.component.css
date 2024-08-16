@@ -1,0 +1,91 @@
+body {
+    background: none;
+    font-family: 'kanit', cursive;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher_page {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 220px);
+    left: 220px;
+}
+
+/* .teacher_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.classBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classBtn a {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    background: #741818;
+    width: 200px;
+    padding: 30px;
+    margin: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.classBtn .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+}
+
+.classBtn .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 60px; /* Position below the button */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 150px; /* Same width as the button */
+}
+
+.classBtn .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.classBtn .dropdown-content a:hover {
+    background-color: #666666;
+    border-radius: 10px;
+}
+
+.classBtn .dropdown:hover .dropdown-content {
+    display: block;
+}

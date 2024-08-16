@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit', cursive;
+}
+
+body
+{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: #741818;
+    padding: 6px 14px;
+}
+
+.sidebar .logo_content .logo i
+{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_content
+{
+    color: #fff;
+}
+
+.logo_content .logo .logo_name
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 16px;
+}
+
+.sidebar ul
+{
+    margin-top: 10px;
+}
+
+.sidebar ul li
+{
+    position: relative;
+    height: 100px;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 90px;
+}
+
+.sidebar ul li a
+{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.1s ease;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover
+{
+    color: #741818;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.sidebar ul li a i
+{
+    height: 50px;
+    min-width: 40px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.submenu .link
+{
+    color: #fff;
+    font-size: 15px;
+    padding: 2px 0;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+
+.submenu .link:hover
+{
+    color: #fff;
+}
+
+.sidebar i
+{
+    left: 50px;
+}
+
+.sidebar .submenu {
+    display: none; /* Hide submenu by default */
+}
+
+.sidebar .dropdown:hover .submenu {
+    display: block; /* Show submenu when hovering over the dropdown */
+}

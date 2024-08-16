@@ -1,0 +1,36 @@
+<body class="kid_page">
+    <div class="kid_content"> 
+    <h1>Kids Class Information</h1>
+        <div class="kid_board">
+                
+    <div class="search">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class='bx bx-search-alt-2'></i>
+        </a>
+    </div>
+
+        <div class="board">
+                <table>
+                    <thead>
+                        <tr class="trtable">
+                            <th id="nickname" class="show_nickname">ชื่อเล่น</th>
+                            <th id="name" class="show_name">ชื่อ-นามสกุล</th>
+                            <th id="age" class="show_age">อายุ</th>
+                            <th id="tell" class="show_tell">เบอร์ติดต่อ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="trtbody" *ngFor="let nickname of nn_List; let i = index">
+                            <td id="nickname" class="show_nn">{{ nickname }}</td>
+                            <td id="name" class="show_n">{{ n_List[i] }}</td>
+                            <td id="age" class="show_a">{{ a_List[i] }}</td>
+                            <td id="tell" class="show_t">{{ t_List[i] }}</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,133 @@
+<div class="room_page">
+    <div class="room_content">
+        <div class="container">
+            <h1>Select a Class</h1>
+
+            <div class="class_container">
+            <div class="class_name" id="class_kpop" style="background-color: rgb(202, 138, 138);">K-Pop</div>
+            <div class="class_name" id="class_kids" style="background-color: rgb(167, 88, 88);">Kids</div>
+            <div class="class_name" id="class_rent" style="background-color: rgb(146, 58, 58);">Rent</div>
+            <div class="class_name" id="class_private" style="background-color: rgb(107, 31, 31);">Private</div>
+            <div class="class_name" id="cancle" (click)="toggleCancelMode()">Cancle</div>
+            <div class="class_name" id="deselect" (click)="deselectAll()">Deselect All</div>
+            </div>
+
+                <h3>Add Selected Class To The Schedule</h3>
+
+            <div class="schedule_container">
+                
+                <div class="times_container">
+                    <span class="corner"></span>
+                    <div class="times">10:00-11:00</div>
+                    <div class="times">11:00-12:00</div>
+                    <div class="times">12:00-13:00</div>
+                    <div class="times">13:00-14:00</div>
+                    <div class="times">14:00-15:00</div>
+                    <div class="times">15:00-16:00</div>
+                    <div class="times">16:00-17:00</div>
+                    <div class="times">17:00-18:00</div>
+                    <div class="times">18:00-19:00</div>
+                    <div class="times">19:00-20:00</div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Sunday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Monday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Tuesday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Wednesday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Thursday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Friday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+                <div class="part_days">
+                    <span class="days">Saturday</span>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                    <div class="task"></div>
+                </div>
+            </div>
+        </div>
+        <div class="btn_add">
+            <button type="submit" class="btn_addrent">Add Rent</button>
+            <button type="submit" class="btn_addclass">Add Class</button>
+        </div>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>
